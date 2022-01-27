@@ -1,4 +1,4 @@
-mport os
+import os
 import openai
 #$ pip install openai 
 openai.api_key = os.getenv("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")
