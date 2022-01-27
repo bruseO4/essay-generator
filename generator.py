@@ -17,7 +17,7 @@ response = openai.Completion.create(
   frequency_penalty=0,
   presence_penalty=0
 )
-d
+
 essay=essay_prompt+response.choices[0].text
 
 print(essay)
