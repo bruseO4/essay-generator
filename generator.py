@@ -1,7 +1,23 @@
-import os
+mport os
 import openai
+#$ pip install openai 
+openai.api_key = os.getenv("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")
 
-# Load your API key from an environment variable or secret management service
-openai.api_key = os.getenv("OPENAI_API_KEY")
 
-response = openai.Completion.create(engine="text-ada-001", prompt="Say this is a test", max_tokens=6)
+essay_prompt=input("Enter text to be autocompleted:\n")
+
+
+response = openai.Completion.create(
+  api_key = "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",
+  engine="ada",
+  prompt=essay_prompt,
+  temperature=0.7,
+  max_tokens=64,
+  top_p=1,
+  frequency_penalty=0,
+  presence_penalty=0
+)
+d
+essay=essay_prompt+response.choices[0].text
+
+print(essay)
