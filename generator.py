@@ -1,7 +1,7 @@
 import os
 import openai
 #$ pip install openai 
-openai.api_key = os.getenv("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")
+openai.api_key = os.getenv("sk-MgvIBmH")
 
 
 essay_prompt=input("Enter text to be autocompleted:\n")
