@@ -8,7 +8,7 @@ essay_prompt=input("Enter text to be autocompleted:\n")
 
 
 response = openai.Completion.create(
-  api_key = "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",
+  api_key = "sk-GcwKPkBFmxVRpoKEOt0TT3BlbkFJh2YQn8YrhBuiY",
   engine="ada",
   prompt=essay_prompt,
   temperature=0.7,
